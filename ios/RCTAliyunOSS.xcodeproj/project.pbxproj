@@ -149,6 +149,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 00CAEE451DC05BFC003B3B1F;
@@ -265,7 +266,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"\"${SRCROOT}/../../../ios/Pods/Headers/Public/Yoga\"",
+					"\"${SRCROOT}/../../../ios/Pods/Headers/Public/React-Core\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AliyunOSSSDK",
@@ -280,7 +285,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"\"${SRCROOT}/../../../ios/Pods/Headers/Public/Yoga\"",
+					"\"${SRCROOT}/../../../ios/Pods/Headers/Public/React-Core\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/AliyunOSSSDK",
 					"$(inherited)",
